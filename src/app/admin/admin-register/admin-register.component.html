@@ -1,0 +1,62 @@
+
+  <div class="conatiner mt-4">
+    <div class="registration-form m-3 p-4">
+      <form [formGroup]="registerForm">
+        <div class="row">
+        
+          <div class="col-md-6">
+            <mat-form-field appearance="outline">
+              <mat-label>Admin Name</mat-label>
+              <input formControlName="admin_name" matInput placeholder="admin_name">
+              <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              <mat-icon matSuffix>assignment_ind</mat-icon>
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field> 
+  
+          </div>
+          <div class="col-md-6">
+            <mat-form-field appearance="outline">
+              <mat-label>Admin Email</mat-label>
+              <input formControlName="admin_email"matInput placeholder="admin_email">
+              <mat-icon matSuffix> email</mat-icon>
+              <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field> 
+  
+          </div>
+          <div class="col-md-6">
+            <mat-form-field appearance="outline">
+              <mat-label>Contact Number</mat-label>
+              <input formControlName="admin_phone_no" matInput placeholder="admin_phone_no">
+              <mat-icon matSuffix> contacts</mat-icon>
+              <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field> 
+  
+          </div>
+          <div class="col-md-6">
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input formControlName="password" matInput placeholder="password">
+              <mat-icon matSuffix> vpn_key</mat-icon>
+              <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field> 
+  
+          </div>
+          <div class="col-md-6">
+            <mat-form-field appearance="outline">
+              <mat-label>Choose a date</mat-label>
+              <input matInput [matDatepicker]="picker">
+              <mat-hint>MM/DD/YYYY</mat-hint>
+              <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+        <button (click)="submit()" class = "mt - 10" mat-raised-button color="accent">Submit</button>
+      </form>
+     </div>
+  </div>
+
+   

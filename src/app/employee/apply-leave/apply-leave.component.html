@@ -1,0 +1,76 @@
+<!-- <h1>Apply for leaves</h1> -->
+<button mat-raised-button color="warn"routerLink="/emphome"> Back</button> 
+
+
+<div class="conatiner mt-4">
+  <div class="registration-form m-3 p-4">
+    <form [formGroup]="registerForm">
+      <div class="row">
+      
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Employee Name</mat-label>
+            <input formControlName="Employee_name" matInput placeholder="Employee_name">
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <mat-icon matSuffix>assignment_ind</mat-icon>
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+
+        </div>
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Leave Type</mat-label>
+            <input formControlName="leave_type"matInput placeholder="leave_type">
+            <mat-icon matSuffix>assignment_ind</mat-icon>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+
+        </div>
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Leave Reason</mat-label>
+            <input formControlName="leave_reason"matInput placeholder="leave_reason">
+            <mat-icon matSuffix>assignment_ind</mat-icon>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+
+        </div>
+        <!-- <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label> Start Date</mat-label>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <input matInput [matDatepicker]="picker">
+            <input formControlName="start_date" matInput placeholder="start_date">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div> -->
+
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Total Days</mat-label>
+            <input formControlName="total_days" matInput placeholder="total_days">
+            <mat-icon matSuffix>assignment_ind</mat-icon>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+
+        </div>
+        <!-- <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Leave Status</mat-label>
+            <input formControlName="leave_staus" matInput placeholder="leave_status">
+            <mat-icon matSuffix>assignment_ind</mat-icon>
+          </mat-form-field> 
+        </div> -->
+
+
+      </div>
+      <button (click)="submit()" class = "mt - 10" mat-raised-button color="accent">Submit</button>
+    </form>
+   </div>
+</div>
+
+ 

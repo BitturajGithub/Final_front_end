@@ -1,0 +1,74 @@
+<button mat-raised-button color="warn"routerLink="/mnghome"> Back</button> 
+<!-- <h1>Apply for leaves</h1> -->
+
+
+<div class="conatiner mt-4">
+  <div class="registration-form m-3 p-4">
+    <form [formGroup]="registerForm">
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Task Name</mat-label>
+            <input formControlName="task_name" matInput placeholder="task_name">
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <mat-icon matSuffix>assignment_ind</mat-icon>
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+        </div>
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Task Details</mat-label>
+            <input formControlName="task_detail"matInput placeholder="task_detail">
+            <mat-icon matSuffix>assignment_ind</mat-icon>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+        </div>
+        
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Allowed Days</mat-label>
+            <input formControlName="allowed_days"matInput placeholder="allowed_days">
+            <mat-icon matSuffix>assignment_ind</mat-icon>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+        </div>
+        
+
+        <!-- <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Task Progress</mat-label>
+            <input formControlName="task_progress" matInput placeholder="task_progress">
+            <mat-icon matSuffix>assignment_ind</mat-icon>
+          </mat-form-field> 
+        </div> -->
+       
+        <!-- <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label> Last Date</mat-label>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <input matInput [matDatepicker]="end_date">
+            <input formControlName="end_date" matInput placeholder="end_date">
+            <mat-datepicker-toggle matIconSuffix [for]="end_date"></mat-datepicker-toggle>
+            <mat-datepicker #end_date></mat-datepicker>
+          </mat-form-field>
+        </div> -->
+
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Employee_name</mat-label>
+            <input formControlName="Employee_name" matInput placeholder="Employee_name">
+            <mat-icon matSuffix>assignment_ind</mat-icon>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+        </div>
+
+      </div>
+      <button (click)="submit()" class = "mt - 10" mat-raised-button color="accent">Submit</button>
+    </form>
+   </div>
+</div>
+
+ 

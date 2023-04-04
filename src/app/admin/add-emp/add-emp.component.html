@@ -1,0 +1,88 @@
+<button mat-raised-button color="warn"routerLink="/adminemphome"> Back</button>  
+
+
+<div class="conatiner mt-4">
+  <div class="registration-form m-3 p-4">
+    <form [formGroup]="signupForm">
+      <div class="row">
+        
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Employee Name</mat-label>
+            <input formControlName="Employee_name" matInput placeholder="Employee_name">
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <mat-icon matSuffix>face</mat-icon>
+            <!-- <mat-icon matSuffix>assignment_ind</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+
+        </div>
+        <!-- <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Joining Date</mat-label>
+            <input formControlName="Joining_date" matInput [matDatepicker]="Joining_date">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="Joining_date"></mat-datepicker-toggle>
+            <mat-datepicker #Joining_date></mat-datepicker>
+          </mat-form-field>
+        </div> -->
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Department</mat-label>
+            <input formControlName="Department" matInput placeholder="Department">
+            <mat-icon matSuffix> assignment_ind</mat-icon>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+
+        </div>
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Employee Email</mat-label>
+            <input formControlName="emp_email" matInput placeholder="emp_email">
+            <mat-icon matSuffix> email</mat-icon>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+
+        </div>
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Contact Number</mat-label>
+            <input formControlName="emp_phone_no" matInput placeholder="emp_phone_no">
+            <mat-icon matSuffix>contacts</mat-icon>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+
+        </div>
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input formControlName="emp_password" matInput placeholder="emp_password">
+            <mat-icon matSuffix> vpn_key</mat-icon>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+
+        </div>
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Manager Name</mat-label>
+            <input formControlName="Manager_name" matInput placeholder="Manager_name">
+            <mat-icon matSuffix>face</mat-icon>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field> 
+
+        </div>
+        
+      </div>
+      <button  (click)="submit()" class = "mt - 10" mat-raised-button color="accent">Submit</button>
+      
+
+    </form>
+   </div>
+</div>
+
+ 

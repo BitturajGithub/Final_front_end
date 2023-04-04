@@ -1,0 +1,117 @@
+<button mat-raised-button color="warn"routerLink="/adminmnghome"> Back</button> 
+
+
+
+<br /><br />
+
+<h3 style="text-align: center">Update Manager Details</h3>
+<br />
+<form class="d-flex" style="padding-left: 300px; padding-right: 300px">
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Enter Manager Id "
+    [(ngModel)]="mng_id"
+    name="mng_id"
+  />
+  <button
+    style="margin: 10px"
+    class="btn btn-outline-dark"
+    type="submit"
+    (click)="search()"
+  >
+    Search
+  </button>
+</form>
+
+<br />
+<div *ngIf="show">
+  <form
+    class="row g-3 p-5 mb-3"
+    style="
+      background-color: rgb(148, 240, 240);
+      margin-left: 40px;
+      margin-right: 40px;
+    "
+  >
+
+
+   
+    <div class="col-md-5">
+      <label class="form-label">Manager Name</label>
+      <input
+        type="id"
+        class="form-control"
+        name="id"
+        [(ngModel)]="Manager_name"
+      />
+    </div>
+
+
+    <!-- <div class="col-md-5">
+        <label class="form-label">Department</label>
+        <input
+          type="id"
+          class="form-control"
+          name="id"
+          [(ngModel)]="Department"
+        />
+      </div> -->
+
+    <!-- <div class="col-5">
+      <label class="form-label">Department</label>
+      <input
+        type="text"
+        class="form-control"
+        name="firstName"
+        [(ngModel)]="Department"
+      />
+    </div> -->
+
+    <div class="col-5">
+      <label for="lastName" class="form-label">Email Address</label>
+      <input
+        type="text"
+        class="form-control"
+        name="lastName"
+        [(ngModel)]="mng_email"
+      />
+    </div>
+
+    <div class="col-5">
+      <label for="lastName" class="form-label">Mobile Number</label>
+      <input
+        type="text"
+        class="form-control"
+        name="lastName"
+        [(ngModel)]="mng_phone_no"
+      />
+    </div>
+
+    <!-- <div class="col-md-5">
+      <label class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        [(ngModel)]="emp_password"
+      />
+    </div> -->
+
+    <!-- <div class="col-5">
+      <label class="form-label">Manager Password</label>
+      <input
+        type="text"
+        class="form-control"
+        name="firstName"
+        [(ngModel)]="mng_password"
+      />
+    </div> -->
+
+    <div class="col-10">
+      <button type="submit" class="btn btn-primary" (click)="updateData()">
+        Update
+      </button>
+    </div>
+  </form>
+</div>

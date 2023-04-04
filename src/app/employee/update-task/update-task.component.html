@@ -1,0 +1,121 @@
+<button mat-raised-button color="warn"routerLink="/emphome"> Back</button> 
+
+
+<h3 style="text-align: center">Update Task</h3>
+<br />
+<form class="d-flex" style="padding-left: 300px; padding-right: 300px">
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Enter Task ID "
+    [(ngModel)]="task_id"
+    name="task_id"
+  />
+  <button
+    style="margin: 10px"
+    class="btn btn-outline-dark"
+    type="submit"
+    (click)="search()"
+  >
+    Search
+  </button>
+</form>
+
+<br />
+<div *ngIf="show">
+  <form
+    class="row g-3 p-5 mb-3"
+    style="
+      background-color: rgb(243, 192, 8);
+      margin-left: 40px;
+      margin-right: 40px;
+    "
+  >
+    <!-- <div class="col-md-5">
+      <label class="form-label">Task Name</label>
+      <input
+        type="id"
+        class="form-control"
+        name="id"
+        [(ngModel)]="task_name"
+      />
+    </div> -->
+
+
+    <!-- <div class="col-md-5">
+        <label class="form-label"> Task Details</label>
+        <input
+          type="id"
+          class="form-control"
+          name="id"
+          [(ngModel)]="task_detail"
+        />
+      </div> -->
+
+    <!-- <div class="col-5">
+      <label class="form-label">Allowed Days</label>
+      <input
+        type="text"
+        class="form-control"
+        name="firstName"
+        [(ngModel)]="allowed_days"
+      />
+    </div> -->
+
+    <!-- <div class="col-5">
+      <label for="lastName" class="form-label">Email Address</label>
+      <input
+        type="text"
+        class="form-control"
+        name="lastName"
+        [(ngModel)]="emp_email"
+      />
+    </div> -->
+
+    <!-- <div class="col-5">
+      <label for="lastName" class="form-label">Task Progress</label>
+      <input
+        type="text"
+        class="form-control"
+        name="lastName"
+        [(ngModel)]="task_progress"
+      />
+    </div> -->
+       <div class="col-5">
+        <form #f="ngForm">
+          <input type="radio" value="not started" name="gender" [(ngModel)]="task_progress" required> Not started
+          <input type="radio" value="10%" name="gender" [(ngModel)]="task_progress" required> 10%
+          <input type="radio" value="20%" name="gender" [(ngModel)]="task_progress" required> 20%
+          <input type="radio" value="50%" name="gender" [(ngModel)]="task_progress" required> 50%
+          <input type="radio" value="70%" name="gender" [(ngModel)]="task_progress" required> 70%
+          <input type="radio" value="90%" name="gender" [(ngModel)]="task_progress" required> 90%
+          <input type="radio" value="completed" name="gender" [(ngModel)]="task_progress" required> Completed
+        </form>
+       </div>
+    <!-- <div class="col-md-5">
+      <label class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        [(ngModel)]="emp_password"
+      />
+    </div> -->
+
+    <!-- <div class="col-5">
+      <label class="form-label">Employee Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="firstName"
+        [(ngModel)]="Employee_name"
+      />
+    </div> -->
+
+    <div class="col-10">
+      <button type="submit" class="btn btn-primary" (click)="updateData()">
+        Update
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,60 @@
+
+
+
+/* CSS */
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: none;
+    padding: 10px;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 50px;
+    min-width: 500x;
+    padding:50px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .space {
+    width: 8px;
+    height: auto;
+    display: inline-block;
+  }
+
+  .card{
+    border:none;
+    width:500px;
+    padding:40px;
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: skyblue;
+    background: linear-gradient(90deg, rgb(55, 173, 220)0%,  rgb(55, 173, 220)100% );
+  }
+  .card label h1,
+  h6{
+   color:black;
+  }
+  label{
+    color:black;
+  }
+  .full-width{
+    width: 100%;
+  }
+
+.form-group{
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    margin-left: 27%;
+    
+}

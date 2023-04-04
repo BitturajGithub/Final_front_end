@@ -1,0 +1,40 @@
+
+
+<header> 
+    <!-- <button mat-raised-button color="warn" routerLink="/adminlogin">Back</button>  -->
+    <!-- <button style="color: aqua;" routerLink="/adminemphome"> Employee</button>
+    <button style="color: brown;" routerLink="/adminmnghome" > Manager</button> -->
+    <div class="example-label">
+        <div class="example-button-row">
+          <!-- <button mat-raised-button>Basic</button> -->
+          <div class=" space "></div>
+          <button mat-raised-button color="accent" routerLink="/adminemphome"> Employee Management</button> 
+          <div class=" space "></div>
+          <button mat-raised-button color="primary" routerLink="/adminmnghome" > Manager Management</button> 
+        </div>
+    </div>
+
+</header>
+
+
+
+<footer>
+<!-- <button mat-raised-button color="warn" routerLink=""> LOG OUT</button>  -->
+<button [cdkMenuTriggerFor]="menu" class="example-standalone-trigger" mat-raised-button color="primary" >Help!</button>
+<ng-template #menu>
+  <div class="example-menu" cdkMenu>
+<br><br><br>
+
+    <button class="example-menu-item" cdkMenuItem mat-raised-button color="accent" routerLink="/adminlogin">Back</button>
+    <br>
+    <br>
+    <br>
+    <button class="example-menu-item" cdkMenuItem mat-raised-button color="warn" routerLink=""> LOG OUT</button>
+    <!-- <button class="example-menu-item" cdkMenuItem>Help</button> -->
+    <!-- <button class="example-menu-item" cdkMenuItem>Sign out</button> -->
+  </div>
+</ng-template>
+
+
+
+</footer>

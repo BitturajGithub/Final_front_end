@@ -1,0 +1,30 @@
+
+
+
+/* CSS */
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 50px;
+  min-width: 500x;
+  padding:50px;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.space {
+  width: 18px;
+  height: auto;
+  display: inline-block;
+}

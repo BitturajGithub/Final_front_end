@@ -1,0 +1,25 @@
+.center {
+    margin: auto;
+    width: 50%;
+    border: none;
+    padding: 10px;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 80px;
+    min-width: 200x;
+    padding:100px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .space {
+    width: 8px;
+    height: auto;
+    display: inline-block;
+  }

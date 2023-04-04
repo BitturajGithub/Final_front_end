@@ -1,0 +1,71 @@
+<button mat-raised-button color="warn"routerLink="/emphome"> Back</button> 
+
+
+
+<div class="example-header">
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Filter">
+    </mat-form-field>
+  </div>
+  
+  
+  
+  <div class="example-container mat-elevation-z8">
+  
+    <mat-table [dataSource]="dataSource" matSort>
+      
+      <ng-container matColumnDef="process_id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Leave ID </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.process_id}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Employee_name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Employee Name </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.Employee_name}}</mat-cell>
+      </ng-container>
+      
+      <ng-container matColumnDef="leave_type">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Leave Type </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.leave_reason}} </mat-cell>
+      </ng-container>
+      
+      <ng-container matColumnDef="leave_reason">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Leave Reason </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.leave_reason}} </mat-cell>
+      </ng-container>
+  
+    
+  
+      <ng-container matColumnDef="total_days">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Total Days</mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.total_days}} </mat-cell>
+      </ng-container>
+  
+      
+       <ng-container matColumnDef="leave_status">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Leave Status</mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.leave_status}} </mat-cell>
+      </ng-container>
+  
+      
+  
+       <!-- Action column -->
+        <!-- <ng-container matColumnDef="Action">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Action</mat-header-cell>
+          <mat-cell *matCellDef="let row"> 
+  
+            <button [routerLink]="['/viewemp',row.id]" mat-icon-button color="primary"><i class="fa fa-eye"></i></button>
+            <button (click)="edit(row.Employee_name)" color="accent"><i class="fa fa-pencil"></i></button>
+            <button mat-icon-button color="warn"><i class="fa fa-trash"></i></button>
+          </mat-cell>
+        </ng-container> -->
+    
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;">
+      </mat-row>
+    </mat-table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  </div>
+  
